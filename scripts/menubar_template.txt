@@ -1,27 +1,24 @@
 <ul id="MenuBar1">
     <li>
     <a href="./Index.html">
-      <center>
         Home
-      </center>
     </a>
     </li>
     <li><a href="./Teams.html">
-      <center>
         Teams
-      </center>
+			<ul>
+				<li>the Patriots</li>
+				<li>Direct Current</li>
+				<li>the Maniacal Mechanics</li>
+			</ul>
     </a>
     </li>
     <li><a href="./Events.html">
-      <center>
         Upcoming Events
-      </center>
     </a>
     </li>
     <li><a href="./Sponsors.html">
-      <center>
         Sponsors
-      </center>
     </a>
 	</li>
   </ul>
