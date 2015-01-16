@@ -5,12 +5,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Rolla Robotics</title>
 <link href="./styles/StyleSheet.css" rel="stylesheet" type="text/css">
-<script src="./scripts/SpryMenuBar.js" type="text/javascript"></script><style type="text/css"></style>
-<link href="./styles/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<script src="./scripts/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="./scripts/jquery-ui-1.11.2/jquery-ui.min.js" type="text/javascript"></script>
+<link href="./scripts/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="container">
-  <div class="header"><!-- end .header --><img src="./images/Banner.png" width="1001" height="481" alt="Rolla Robotics Banner">
+  <div class="header"><!-- end .header --><img src="./images/Banner.png" width="1001" height="481" alt="Rolla Robotics Banner"></div>
+  <div class="sidebar1">
   <ul id="MenuBar1" class="MenuBarHorizontal">
     <li>
     <a href="./Index.html">
@@ -42,7 +44,7 @@
         </center>
     </a></li>
   </ul>
-  <div class="sidebar1"><!-- end .sidebar1 --></div>
+  <!-- end .sidebar1 --></div>
   <div class="content">
     <h1>What is Rolla Robotics?</h1>
     <p>Rolla Robotics is a collective of three teams that participate annually in  the FIRST FTC program. FIRST stands for "For Inspiration and Recognition  of Science and Technology." The goal of FIRST is to inspire young people to be science and technology leaders by engaging them in exciting mentor-based  programs that build science, engineering and technology skills, inspire innovation and foster well-rounded life capabilities including  self-confidence, communication, and leadership. One of the FIRST competitions is FTC,  which stands for "FIRST Tech Challenge." This is a competition designed for interested 8th graders through seniors. The competition is alliance based, red alliance versus blue alliance, with two teams per alliance.  Awards are given for the competition as well as for community outreach, design, and other real-world accomplishments. Please visit <a href="http://www.usfirst.org/">www3.usfirst.org</a> to learn more.</p>
@@ -56,7 +58,9 @@
   <div class="footer">
     <p>Rolla Robotics © copyright. All Rights Reserved. Page Last Updated: 02/25/14</p>
 <script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+$(function() {
+	$("#MenuBar1").menu();
+});
 </script>
 </body>
 </html>
