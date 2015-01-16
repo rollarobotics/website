@@ -53,7 +53,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 /* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
 .header {
-	background-image: url(Images/Metal%20Background.jpg);
+	
 }
 
 /* ~~ These are the columns for the layout. ~~ 

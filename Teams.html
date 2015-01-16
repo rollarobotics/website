@@ -3,46 +3,17 @@
 
 <title>Teams</title>
 <link href="./styles/StyleSheet.css" rel="stylesheet" type="text/css">
-<script src="./scripts/SpryMenuBar.js" type="text/javascript"></script><style type="text/css"></style>
-<link href="./styles/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<script src="./scripts/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="./scripts/handlebars-v2.0.0.js" type="text/javascript"></script>
+<script src="./scripts/jquery-ui-1.11.2/jquery-ui.min.js" type="text/javascript"></script>
+<link href="./scripts/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
 <div class="container">
   <div class="header"><!-- end .header --><img src="./images/Banner.png" width="1001" height="481"></div>
-  <ul id="MenuBar1" class="MenuBarHorizontal">
-    <li>
-    <a href="./Index.html">
-      <center>
-        Home
-      </center>
-    </a>
-    </li>
-    <li><a href="./Teams.html">
-      <center>
-        Teams
-      </center>
-    </a>
-    </li>
-    <li><a href="./Events.html">
-      <center>
-        Upcoming Events
-      </center>
-    </a>
-    </li>
-    <li><a href="./Sponsors.html">
-      <center>
-        Sponsors
-      </center>
-    </a></li>
-    <li><a href="./Contact.html">
-        <center>
-            Contact Us
-        </center>
-    </a></li>
-  </ul>
-  <div class="sidebar1"><!-- end .sidebar1 --></div>
+  <div id="sidebar1" class="sidebar1"></div>
   <div class="content">
     <h1 align="center">Team 4964 </h1>
     <p align="center"><img src="./images/Patriots Logo.gif" alt="Rolla Patriots" width="500" height="146"></p>
@@ -63,7 +34,13 @@
   <!-- end .footer --></div>
   <!-- end .container --></div>
 <script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+$(function() {
+	$.get("./scripts/menubar_template.txt", function(template) {
+		var menubar = Handlebars.compile(template);
+		$("#sidebar1").html(menubar());
+		$("#MenuBar1").menu();
+	});
+});
 </script>
 
 
