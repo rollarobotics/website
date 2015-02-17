@@ -1,9 +1,0 @@
-Round,Field,Red1,Red2,Blue1,Blue2
-1,1,A,B,C,D
-1,2,E,F,G,H
-2,1,A,E,G,D
-2,2,B,F,C,H
-3,1,F,C,A,H
-3,2,B,G,H,E
-4,1,C,A,B,H
-4,2,F,D,E,G
