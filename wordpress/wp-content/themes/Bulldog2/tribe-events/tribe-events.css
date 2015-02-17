@@ -1,0 +1,38 @@
+/* Override CSS for The Events Calendar plugin */
+
+/* CSS overrides for The Events Calendar List widget */
+
+.tribe-events-list-widget ol {
+	padding-left: 0px;
+	margin:0;
+}
+li.tribe-events-list-widget-events h4.entry-title.summary {
+	padding-right: 0px;
+	line-height: 15px;
+	margin-bottom: 5px;
+}
+
+li.tribe-events-list-widget-events h4.entry-title.summary a {
+	font-size: 14px;
+	text-decoration: underline;
+	color:black !important;
+}
+li.tribe-events-list-widget-events div.duration {
+	font-size: 11px;
+	margin-left:15px;
+	color:black;
+}
+
+li.tribe-events-list-widget-events { 
+	margin-bottom: 10px; 
+}
+
+
+.tribe-events-list-widget ol li { margin-bottom: 0; }
+
+/* This will add or subtract spacing from the 'View All Events' link */
+.tribe-events-widget-link { 
+	padding-top: 10px;
+	font-size:10px;
+	color: black !important;
+}
